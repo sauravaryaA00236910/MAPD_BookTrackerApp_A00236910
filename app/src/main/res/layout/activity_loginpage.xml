@@ -1,6 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome \n To"/>
+<!--        style="@style/LoginTextView"-->
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BookTracker App"/>
+<!--        style="@style/LoginTextView"-->
+
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/loginEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="@string/email"
+        android:inputType="textEmailAddress" />
+<!--        android:hint="@string/email"-->
+<!--        style="@style/RegisterEditText"-->
+
+
+    <EditText
+        android:id="@+id/loginpaswd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:hint="Password"
+        android:inputType="numberPassword"/>
+<!--        style="@style/RegisterEditText"-->
+
+
+    <Button
+        android:id="@+id/btnLogIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login In"/>
+<!--        style="@style/LoginButton" />-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:id="@+id/registerUserButton"
+        android:text="New Here? SignUp Here" />
+
+</LinearLayout>
